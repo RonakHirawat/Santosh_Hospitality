@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { 
   MessageCircle, Phone, ArrowRight, Hotel, Utensils, Coffee, 
-  ChefHat, Plane, Briefcase, Award, ShieldCheck, Sparkles 
+  ChefHat, Plane, Briefcase, Award, ShieldCheck, Sparkles,
+  Train, Ship
 } from 'lucide-react';
 import ScrollReveal from '../components/ScrollReveal';
 import PlaceholderVector from '../components/PlaceholderVector';
@@ -174,6 +175,14 @@ export default function Home() {
             <div className="industry-sector-icon-block">
               <Plane size={24} className="sector-icon" strokeWidth={1.5} />
               <span>Airports</span>
+            </div>
+            <div className="industry-sector-icon-block">
+              <Train size={24} className="sector-icon" strokeWidth={1.5} />
+              <span>Railways</span>
+            </div>
+            <div className="industry-sector-icon-block">
+              <Ship size={24} className="sector-icon" strokeWidth={1.5} />
+              <span>Shipping</span>
             </div>
           </div>
         </ScrollReveal>
