@@ -1,48 +1,53 @@
 import ScrollReveal from '../components/ScrollReveal';
-import { Hotel, Utensils, Coffee, ChefHat, Layers, Plane, Briefcase, ShoppingBag, ArrowRight } from 'lucide-react';
+import { Hotel, Utensils, Coffee, ChefHat, Plane, Briefcase, Train, Ship, Building2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Industries() {
   const sectors = [
     {
       icon: <Hotel size={36} strokeWidth={1} />,
-      name: 'Hotels & Luxury Resorts',
-      desc: 'Sophisticated back-of-house supplies, branded paper cups, guest soaps, matched kits, and amenities reflecting premium status.'
+      name: 'Hotels & Resorts',
+      desc: 'Sophisticated back-of-house supplies, custom-printed paper cups, luxury guest soaps, matching guest kits, and bespoke amenities reflecting high-end status.'
     },
     {
       icon: <Utensils size={36} strokeWidth={1} />,
       name: 'Premium Restaurants',
-      desc: 'Fine-dining paper napkins, custom-printed takeout boxes, greaseproof liners, and leak-proof portion cups.'
+      desc: 'Fine-dining paper napkins, custom-branded takeout boxes, greaseproof liners, leak-proof portion cups, and heavy-duty paper carriers.'
     },
     {
       icon: <Coffee size={36} strokeWidth={1} />,
       name: 'Artisan Cafés & Bakeries',
-      desc: 'Double-walled ripple cups, pastry carry-boxes, sugarcane pulp trays, stirrers, and paper straws.'
+      desc: 'Double-walled ripple cups, pastry carry-boxes, sugarcane pulp containers, wooden stirrers, and biodegradable paper straws.'
     },
     {
       icon: <ChefHat size={36} strokeWidth={1} />,
       name: 'Corporate Caterers',
-      desc: 'Heavy-duty buffet trays, customized meal-pack boxes, biodegradable tableware, and housekeeping cleaning sheets.'
+      desc: 'Heavy-duty buffet trays, customized meal-pack boxes, biodegradable tablewares, and large-format food transit packaging.'
     },
     {
-      icon: <Layers size={36} strokeWidth={1} />,
-      name: 'Cloud Kitchens',
-      desc: 'Standardized delivery containers, tamper-evident safety stickers, insulated parcel liners, and multi-compartment boxes.'
+      icon: <Briefcase size={36} strokeWidth={1} />,
+      name: 'Corporate Offices & Parks',
+      desc: 'Pantry consumables, paper water cups, tissue dispensers, office hygiene rolls, and eco-friendly breakroom supplies.'
     },
     {
       icon: <Plane size={36} strokeWidth={1} />,
       name: 'Airports & Travel Hubs',
-      desc: 'High-durability quick-service cups, structural bagasse plates, quick-pack bags, and airport-compliant hygiene products.'
+      desc: 'High-durability quick-service cups, structural bagasse plates, quick-pack takeaway bags, and aviation-compliant hygiene packs.'
     },
     {
-      icon: <Briefcase size={36} strokeWidth={1} />,
-      name: 'Corporate Supply',
-      desc: 'Wholesale office pantry consumables, paper water cups, tissue dispensers, and housekeeping consumables.'
+      icon: <Train size={36} strokeWidth={1} />,
+      name: 'Railways & Transit Catering',
+      desc: 'Compact food containers, passenger meal boxes, hygienic napkins, and disposable kitchenware designed for high-density transit services.'
     },
     {
-      icon: <ShoppingBag size={36} strokeWidth={1} />,
-      name: 'Retail & Individual Buyers',
-      desc: 'Standardized consumer packs for local supermarkets, boutique stores, event organizers, and personal household needs.'
+      icon: <Ship size={36} strokeWidth={1} />,
+      name: 'Shipping & Maritime Catering',
+      desc: 'Moisture-resistant packaging, high-absorbency towels, heavy-duty disposable containers, and marine-safe biodegradable consumables.'
+    },
+    {
+      icon: <Building2 size={36} strokeWidth={1} />,
+      name: 'Institutional & Educational Buyers',
+      desc: 'Bulk-pack dining hall supplies, large-scale event catering disposables, cafeteria containers, and commercial-grade housekeeping items.'
     }
   ];
 

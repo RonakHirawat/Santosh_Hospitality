@@ -48,7 +48,24 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Column 4: Contact Details */}
+        {/* Column 4: Registrations */}
+        <div>
+          <h4>Registrations</h4>
+          <ul className="footer-registrations-block">
+            <li>
+              <span className="reg-title">GST Number</span>
+              <span className="reg-value">37GYUPB0958J1ZS</span>
+              <span className="reg-status">Active</span>
+            </li>
+            <li>
+              <span className="reg-title">Udyam Registration</span>
+              <span className="reg-value">UDYAM-AP-10-0048280</span>
+              <span className="reg-status">Active</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Column 5: Contact Details */}
         <div>
           <h4>Contact Us</h4>
           <ul className="footer-contact-details">

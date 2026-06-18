@@ -5,33 +5,33 @@ export default function WhyUs() {
   const points = [
     {
       num: '01',
-      title: 'Flexible Order Quantities',
-      desc: 'Equipped to process container-load wholesale orders and direct retail requests. We support everyone from large hotel chains to local cafés and individual buyers.'
+      title: 'Genuine Branded Products',
+      desc: 'Sourced directly from trusted manufacturers and established brands, ensuring authentic and uniform product standards for commercial establishments.'
     },
     {
       num: '02',
-      title: 'Efficient Regional Logistics',
-      desc: 'Headquartered in Andhra Pradesh, our localized shipping network ensures reliable, on-time deliveries to outlets across South India.'
+      title: 'Competitive Wholesale Pricing',
+      desc: 'Cost-effective procurement solutions optimized for bulk buyers, maximizing value through direct manufacturing relationships.'
     },
     {
       num: '03',
-      title: 'Wholesale & Retail Pricing',
-      desc: 'Direct manufacturer partnerships allow us to offer highly competitive pricing structures for both commercial bulk accounts and retail customers.'
+      title: 'Reliable Stock Availability',
+      desc: 'Consistent inventory management and supply support ensuring you never run short of packaging essentials during peak seasonal spikes.'
     },
     {
       num: '04',
-      title: 'Unwavering Quality Control',
-      desc: 'Rigid testing standards for all containers and paper products. Zero issues with heat tolerance, moisture leakage, or weight variance.'
+      title: 'On-Time Delivery',
+      desc: 'Efficient logistics and dependable fulfillment networks providing reliable shipping to outlets across South India.'
     },
     {
       num: '05',
-      title: 'Trusted Supply Network',
-      desc: 'Strategic feedstock stockpiles shield our commercial and retail clients from raw paper board and liner material market fluctuations.'
+      title: 'B2B Hospitality Specialist',
+      desc: 'Focused supply expertise serving hotels, resorts, restaurants, catering services, airports, transit hubs, and corporate offices.'
     },
     {
       num: '06',
-      title: 'Personalized Customer Assistance',
-      desc: 'We offer customized annual supply contracts for businesses and dedicated assistance for retail orders. Benefit from tailored support at any scale.'
+      title: 'Bulk Order Support',
+      desc: 'Dedicated procurement assistance to oversee custom printing requirements, tailored dimensions, and corporate accounts.'
     }
   ];
 

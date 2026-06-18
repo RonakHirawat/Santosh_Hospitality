@@ -2,10 +2,12 @@ import { Link } from 'react-router-dom';
 import { 
   MessageCircle, Phone, ArrowRight, Hotel, Utensils, Coffee, 
   ChefHat, Plane, Briefcase, Award, ShieldCheck, Sparkles,
-  Train, Ship
+  Train, Ship, Percent, Boxes, Truck, Headphones
 } from 'lucide-react';
 import ScrollReveal from '../components/ScrollReveal';
 import PlaceholderVector from '../components/PlaceholderVector';
+import BrandsWeDealIn from '../components/BrandsWeDealIn';
+import Certifications from '../components/Certifications';
 
 export default function Home() {
   const whatsappUrl = "https://wa.me/918179593101?text=Hello%20Santosh%20Hospitality%20Solutions%2C%20I%20would%20like%20to%20enquire%20about%20your%20premium%20B2B%20packaging%20solutions.";
@@ -203,6 +205,65 @@ export default function Home() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* 5. Why Choose Santosh Hospitality Section */}
+      <section className="why-choose-home container" style={{ maxWidth: '100%', padding: '5rem 0' }}>
+        <div className="container">
+          <ScrollReveal>
+            <div className="section-header-center">
+              <span className="eyebrow" style={{ color: 'var(--gold-light)' }}>Enterprise Sourcing Benefits</span>
+              <h2>Why Choose Santosh Hospitality</h2>
+              <p className="brands-intro-text" style={{ color: 'rgba(250, 250, 247, 0.7)' }}>
+                We deliver complete supply chain reliability, certified quality, and competitive wholesale economics tailored to the specific needs of commercial operations.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid-3" style={{ marginTop: '3rem' }}>
+            <ScrollReveal className="why-card" stagger={0}>
+              <ShieldCheck size={36} strokeWidth={1} className="why-choose-home-icon" />
+              <h3>Genuine Branded Products</h3>
+              <p>Sourced directly from trusted manufacturers and established industry brands to ensure authenticity and uniform standards.</p>
+            </ScrollReveal>
+
+            <ScrollReveal className="why-card" stagger={60}>
+              <Percent size={36} strokeWidth={1} className="why-choose-home-icon" />
+              <h3>Competitive Wholesale Pricing</h3>
+              <p>Direct manufacturer connections enable high-value, cost-effective procurement solutions optimized for bulk commercial buyers.</p>
+            </ScrollReveal>
+
+            <ScrollReveal className="why-card" stagger={120}>
+              <Boxes size={36} strokeWidth={1} className="why-choose-home-icon" />
+              <h3>Reliable Stock Availability</h3>
+              <p>Meticulous inventory management, warehouse buffers, and consistent supply streams to insulate you from seasonal shortage.</p>
+            </ScrollReveal>
+
+            <ScrollReveal className="why-card" stagger={180}>
+              <Truck size={36} strokeWidth={1} className="why-choose-home-icon" />
+              <h3>On-Time Delivery</h3>
+              <p>Efficient localized logistics and dependable fulfillment networks to guarantee prompt arrivals at operations across South India.</p>
+            </ScrollReveal>
+
+            <ScrollReveal className="why-card" stagger={240}>
+              <Hotel size={36} strokeWidth={1} className="why-choose-home-icon" />
+              <h3>B2B Hospitality Specialist</h3>
+              <p>Focused supply expertise serving hotels, restaurant chains, catering services, airports, transit hubs, and corporate clients.</p>
+            </ScrollReveal>
+
+            <ScrollReveal className="why-card" stagger={300}>
+              <Headphones size={36} strokeWidth={1} className="why-choose-home-icon" />
+              <h3>Bulk Order Support</h3>
+              <p>Dedicated account managers to oversee customized branding requests, volume pricing models, and structured annual contracts.</p>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Brands We Deal In Showcase */}
+      <BrandsWeDealIn />
+
+      {/* 7. Certifications & Registrations */}
+      <Certifications />
 
       {/* 6. CTA Band */}
       <section className="cta-band">

@@ -1411,7 +1411,7 @@ footer.brand-footer p {
   max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2.2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 2.2fr 1fr 1fr 1.2fr 1.5fr;
   gap: 4rem;
   padding: 0 2rem 5rem 2rem;
 }
@@ -1755,3 +1755,620 @@ footer.brand-footer p {
     right: 1.5rem;
   }
 }
+
+/* ==========================================
+   PREMIUM CORPORATE B2B DESIGN ENHANCEMENTS
+   ========================================== */
+
+/* Section header centered utility */
+.section-header-center {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+}
+
+.section-header-center .section-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--brand-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.brands-intro-text {
+  font-size: 0.98rem;
+  color: var(--muted-text);
+  line-height: 1.7;
+}
+
+/* 1. Brands Showcase Section */
+.brands-showcase-section {
+  background-color: var(--surface-color);
+  border-top: 1px solid var(--borders);
+  border-bottom: 1px solid var(--borders);
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.brand-card {
+  background-color: var(--bg-color);
+  border: 1px solid var(--borders);
+  padding: 2.2rem 1.8rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 220px;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+}
+
+.brand-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--brand-accent);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--brand-accent);
+  box-shadow: 0 12px 30px rgba(28, 58, 46, 0.05);
+}
+
+.brand-card:hover::before {
+  opacity: 1;
+}
+
+/* Premium Monogram / Seal */
+.brand-seal {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(184, 151, 58, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1.2rem;
+  background-color: rgba(244, 241, 234, 0.5);
+  transition: all 300ms ease;
+}
+
+.brand-card:hover .brand-seal {
+  border-color: var(--brand-accent);
+  background-color: var(--brand-dark);
+}
+
+.brand-monogram {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--brand-dark);
+  letter-spacing: 0.05em;
+  transition: all 300ms ease;
+}
+
+.brand-card:hover .brand-monogram {
+  color: var(--gold-light);
+}
+
+.brand-badge-ring {
+  position: absolute;
+  inset: -3px;
+  border: 1px dashed rgba(184, 151, 58, 0.15);
+  border-radius: 50%;
+  transition: all 300ms ease;
+}
+
+.brand-card:hover .brand-badge-ring {
+  transform: rotate(45deg);
+  border-color: rgba(184, 151, 58, 0.4);
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--brand-dark);
+  margin-bottom: 0.4rem;
+  line-height: 1.25;
+}
+
+.brand-category {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: var(--muted-text);
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.brand-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--brand-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+/* Brands trust strip */
+.brands-trust-strip {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--borders);
+  padding-top: 3rem;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.trust-strip-col {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--brand-dark);
+  font-weight: 300;
+}
+
+.trust-strip-icon {
+  color: var(--brand-accent);
+}
+
+/* 2. Certifications Section */
+.certifications-section {
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--borders);
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  background-color: var(--bg-color);
+  border: 1px solid var(--borders);
+  position: relative;
+  transition: all 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.02);
+  padding: 3rem;
+}
+
+.cert-card::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(184, 151, 58, 0.12);
+  pointer-events: none;
+  transition: all 350ms ease;
+}
+
+.cert-border-accent {
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(184, 151, 58, 0.05);
+  pointer-events: none;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--brand-accent);
+  box-shadow: 0 20px 45px rgba(28, 58, 46, 0.06);
+}
+
+.cert-card:hover::before {
+  border-color: rgba(184, 151, 58, 0.3);
+  inset: 16px;
+}
+
+.cert-card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cert-badge-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(244, 241, 234, 0.6);
+  border: 1px solid rgba(184, 151, 58, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+
+.cert-badge-glow {
+  position: absolute;
+  inset: -6px;
+  background-color: rgba(184, 151, 58, 0.03);
+  border-radius: 50%;
+  border: 1px dashed rgba(184, 151, 58, 0.15);
+}
+
+.cert-icon {
+  color: var(--brand-accent);
+}
+
+.cert-card:hover .cert-badge-container {
+  background-color: var(--brand-dark);
+  border-color: var(--brand-accent);
+}
+
+.cert-card:hover .cert-icon {
+  color: var(--gold-light);
+}
+
+.cert-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--brand-dark);
+  margin-bottom: 0.5rem;
+}
+
+.cert-tag {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--brand-accent);
+  margin-bottom: 1.2rem;
+  background-color: rgba(184, 151, 58, 0.08);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+.cert-description {
+  font-size: 0.88rem;
+  color: var(--muted-text);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  min-height: 70px;
+}
+
+.cert-divider {
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(184, 151, 58, 0.3) 15%, rgba(184, 151, 58, 0.3) 85%, transparent);
+  margin-bottom: 1.5rem;
+}
+
+.cert-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cert-number-block {
+  text-align: left;
+}
+
+.cert-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted-text);
+}
+
+.cert-number {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--brand-dark);
+}
+
+.cert-status {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: #1c7a4e;
+  background-color: rgba(28, 122, 78, 0.08);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+.status-icon {
+  color: #1c7a4e;
+}
+
+/* 3. Why Choose Us Section Home */
+.why-choose-home {
+  background-color: var(--brand-dark);
+  color: var(--bg-color);
+  border-top: 1px solid rgba(184, 151, 58, 0.15);
+}
+
+.why-choose-home h2, .why-choose-home h3 {
+  color: var(--bg-color);
+}
+
+.why-choose-home .why-card {
+  background-color: rgba(250, 250, 247, 0.03);
+  border-color: rgba(184, 151, 58, 0.15);
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.why-choose-home .why-card:hover {
+  border-color: var(--gold-light);
+  background-color: rgba(250, 250, 247, 0.05);
+}
+
+.why-choose-home .why-card p {
+  color: rgba(250, 250, 247, 0.7);
+}
+
+.why-choose-home-icon {
+  color: var(--gold-light);
+  margin-bottom: 1.2rem;
+  transition: transform 300ms ease;
+}
+
+.why-card:hover .why-choose-home-icon {
+  transform: scale(1.1);
+}
+
+/* 4. Contact Page Business Info Card */
+.business-info-card-section {
+  margin-top: 4rem;
+}
+
+.corporate-info-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--borders);
+  padding: 3.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01);
+  position: relative;
+  overflow: hidden;
+}
+
+.corporate-info-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--brand-accent);
+}
+
+.corp-card-title-block {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(184, 151, 58, 0.2);
+  padding-bottom: 1.5rem;
+}
+
+.corp-card-title-block h3 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--brand-dark);
+  margin-bottom: 0.4rem;
+}
+
+.corp-card-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--brand-accent);
+}
+
+.corp-details-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+}
+
+.corp-detail-section h4 {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--brand-dark);
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(28, 58, 46, 0.1);
+  padding-bottom: 0.4rem;
+}
+
+.corp-detail-list {
+  list-style: none;
+}
+
+.corp-detail-list li {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 0.9rem;
+}
+
+.corp-detail-list li strong {
+  font-weight: 500;
+  color: var(--brand-dark);
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.corp-detail-list li span {
+  color: var(--muted-text);
+  line-height: 1.5;
+}
+
+.corp-detail-icon {
+  color: var(--brand-accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.corp-cert-badges {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.corp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: rgba(28, 58, 46, 0.05);
+  border: 1px solid rgba(28, 58, 46, 0.1);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  color: var(--brand-dark);
+}
+
+/* Footer Registrations block */
+.footer-registrations-block {
+  list-style: none;
+}
+
+.footer-registrations-block li {
+  margin-bottom: 1.2rem;
+  font-size: 0.85rem;
+}
+
+.footer-registrations-block .reg-title {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brand-accent);
+  margin-bottom: 0.2rem;
+}
+
+.footer-registrations-block .reg-value {
+  color: rgba(250, 250, 247, 0.8);
+  font-weight: 400;
+}
+
+.footer-registrations-block .reg-status {
+  display: inline-block;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: rgba(28, 122, 78, 0.15);
+  color: #38c182;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN ADJUSTMENTS FOR NEW SECTIONS */
+@media (max-width: 1024px) {
+  .brand-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .cert-grid {
+    gap: 2rem;
+    max-width: 800px;
+  }
+  
+  .corp-details-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  
+  .brands-trust-strip {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .brand-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+  
+  .corporate-info-card {
+    padding: 2.5rem 1.8rem;
+  }
+  
+  .corp-details-grid {
+    gap: 2rem;
+  }
+  
+  .corp-detail-list li {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  .corp-detail-list li strong {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cert-card {
+    padding: 2.2rem 1.8rem;
+  }
+  
+  .brand-card {
+    padding: 1.8rem 1.5rem;
+    min-height: 180px;
+  }
+}
+

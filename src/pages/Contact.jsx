@@ -1,5 +1,5 @@
 import ScrollReveal from '../components/ScrollReveal';
-import { Mail, Phone, MapPin, Clock, MessageCircle, FileText } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, MessageCircle, FileText, Award, CheckCircle } from 'lucide-react';
 
 export default function Contact() {
   const targetPhone = "918179593101";
@@ -89,6 +89,69 @@ export default function Contact() {
             </div>
           </ScrollReveal>
         </div>
+      </section>
+
+      {/* 4. Business Registration & Corporate Details Card */}
+      <section className="container no-padding-top business-info-card-section" style={{ paddingBottom: '5rem' }}>
+        <ScrollReveal>
+          <div className="corporate-info-card">
+            <div className="corp-card-title-block">
+              <span className="corp-card-subtitle">Official B2B Credentials</span>
+              <h3>Corporate Profile &amp; Registrations</h3>
+            </div>
+            
+            <div className="corp-details-grid">
+              {/* Left Column: Business Registrations */}
+              <div className="corp-detail-section">
+                <h4>Statutory Registrations</h4>
+                <ul className="corp-detail-list">
+                  <li>
+                    <strong style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                      <FileText size={16} className="corp-detail-icon" />
+                      GST Number:
+                    </strong>
+                    <span>[GST NUMBER]</span>
+                    <span style={{ fontSize: '0.65rem', textTransform: 'uppercase', color: '#1c7a4e', backgroundColor: 'rgba(28, 122, 78, 0.08)', padding: '0.15rem 0.4rem', borderRadius: '2px', marginLeft: '0.5rem', fontWeight: 600 }}>Active</span>
+                  </li>
+                  <li>
+                    <strong style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                      <Award size={16} className="corp-detail-icon" />
+                      Udyam Registration:
+                    </strong>
+                    <span>[UDYAM NUMBER]</span>
+                    <span style={{ fontSize: '0.65rem', textTransform: 'uppercase', color: '#1c7a4e', backgroundColor: 'rgba(28, 122, 78, 0.08)', padding: '0.15rem 0.4rem', borderRadius: '2px', marginLeft: '0.5rem', fontWeight: 600 }}>Active</span>
+                  </li>
+                  <li>
+                    <strong style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                      <CheckCircle size={16} className="corp-detail-icon" style={{ color: 'var(--brand-accent)' }} />
+                      Business Status:
+                    </strong>
+                    <span>Registered MSME Enterprise</span>
+                  </li>
+                </ul>
+              </div>
+              
+              {/* Right Column: Entity Details */}
+              <div className="corp-detail-section">
+                <h4>Business Identity</h4>
+                <ul className="corp-detail-list">
+                  <li>
+                    <strong>Legal Entity Name:</strong>
+                    <span>Santosh Hospitality Supplies</span>
+                  </li>
+                  <li>
+                    <strong>Registered Address:</strong>
+                    <span>27-4-25, Dykes Tank Road, Pandupulla Sandhu, Visakhapatnam - 530002, Andhra Pradesh, India</span>
+                  </li>
+                  <li>
+                    <strong>Corporate Contact:</strong>
+                    <span>+91 81795 93101 &nbsp;|&nbsp; santoshhospitalityvsp@gmail.com</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
       </section>
     </div>
   );
