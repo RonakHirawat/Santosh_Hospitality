@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { 
   MessageCircle, Phone, ArrowRight, Hotel, Utensils, Coffee, 
   ChefHat, Plane, Briefcase, Award, ShieldCheck, Sparkles,
-  Train, Ship, Percent, Boxes, Truck, Headphones
+  Train, Ship, Percent, Boxes, Truck, Headphones, FileText
 } from 'lucide-react';
 import ScrollReveal from '../components/ScrollReveal';
 import PlaceholderVector from '../components/PlaceholderVector';
@@ -44,6 +44,15 @@ export default function Home() {
             <a href="tel:+918179593101" className="btn btn-outline-white">
               <Phone size={16} style={{ marginRight: '0.6rem' }} />
               Call Specialist
+            </a>
+            <a 
+              href="https://drive.google.com/drive/folders/1SRQfbH1lucVcfYaTGRJPFzCacIkuTPnX" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-primary"
+            >
+              <FileText size={18} style={{ marginRight: '0.6rem' }} />
+              View Product Catalogue
             </a>
           </ScrollReveal>
         </div>

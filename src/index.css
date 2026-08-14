@@ -1723,14 +1723,6 @@ footer.brand-footer p {
     padding: 7rem 1.5rem 5rem 1.5rem;
   }
   
-  .hero-ctas {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .hero-ctas .btn {
-    width: 100%;
-  }
   
   .grid-4 {
     grid-template-columns: 1fr;
@@ -2372,3 +2364,17 @@ footer.brand-footer p {
   }
 }
 
+/* Stacking Hero CTAs on Tablet & Mobile to prevent overflow/awkward wrapping */
+@media (max-width: 768px) {
+  .hero-ctas {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  .hero-ctas .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
