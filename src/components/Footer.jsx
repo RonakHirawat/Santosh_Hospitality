@@ -14,9 +14,14 @@ export default function Footer() {
           <p className="brand-blurb">
             Premium wholesale and retail supply of packaging, amenities, and consumables across South India. Engineered for businesses and individual buyers alike.
           </p>
-          <a href="/company-profile.pdf" download className="download-pdf-btn">
+          <a 
+            href="https://drive.google.com/drive/folders/1SRQfbH1lucVcfYaTGRJPFzCacIkuTPnX" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="download-pdf-btn"
+          >
             <FileText size={16} />
-            <span>Download Company Profile (PDF)</span>
+            <span>View Product Catalogue</span>
           </a>
         </div>
 

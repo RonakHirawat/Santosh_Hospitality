@@ -81,9 +81,15 @@ export default function Contact() {
                   Start WhatsApp Chat
                 </a>
                 
-                <a href="/company-profile.pdf" download className="btn btn-outline-dark" style={{ justifyContent: 'center', padding: '1.2rem' }}>
+                <a 
+                  href="https://drive.google.com/drive/folders/1SRQfbH1lucVcfYaTGRJPFzCacIkuTPnX" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn btn-outline-dark" 
+                  style={{ justifyContent: 'center', padding: '1.2rem' }}
+                >
                   <FileText size={18} style={{ marginRight: '0.6rem' }} />
-                  Download Complete Catalog
+                  View Product Catalogue
                 </a>
               </div>
             </div>
