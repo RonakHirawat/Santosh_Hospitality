@@ -1,4 +1,5 @@
 import ScrollReveal from '../components/ScrollReveal';
+import Masonry from '../components/Masonry';
 
 import cupImg from '../assets/gallery/paper-cup-350ml.jpeg';
 import containersImg from '../assets/gallery/food-containers.jpeg';
@@ -10,62 +11,62 @@ import strawsImg from '../assets/gallery/paper-straws.jpeg';
 import cutleryImg from '../assets/gallery/wooden-cutlery.jpeg';
 
 export default function Gallery() {
-  const galleryItems = [
+  const items = [
     {
-      image: cupImg,
+      id: 1,
+      img: cupImg,
       title: '350ml Plain Paper Cups',
       subtitle: 'Premium single-wall cups for hot and cold beverages',
-      span: 'col-6',
-      aspect: '4/3'
+      height: 600
     },
     {
-      image: containersImg,
+      id: 2,
+      img: containersImg,
       title: 'Paper Food Containers',
       subtitle: 'Heavy-duty food-grade packaging ranging from 500ml to 1500ml',
-      span: 'col-6',
-      aspect: '4/3'
+      height: 800
     },
     {
-      image: mealBoxImg,
+      id: 3,
+      img: mealBoxImg,
       title: 'Black Hinged Meal Boxes',
       subtitle: 'Chic micro-flute take-away boxes designed for premium kitchens',
-      span: 'col-4',
-      aspect: '1/1'
+      height: 500
     },
     {
-      image: petCupsImg,
+      id: 4,
+      img: petCupsImg,
       title: 'PET Cold Drink Cups',
       subtitle: 'Crystal clear, recyclable tumblers for signature cold beverages',
-      span: 'col-8',
-      aspect: '16/9'
+      height: 700
     },
     {
-      image: friesHolderImg,
+      id: 5,
+      img: friesHolderImg,
       title: 'Kraft Paper Fries Holders',
       subtitle: 'Ergonomic, oil-resistant scoops perfect for quick-service brands',
-      span: 'col-5',
-      aspect: '1/1'
+      height: 900
     },
     {
-      image: sauceCupsImg,
+      id: 6,
+      img: sauceCupsImg,
       title: 'Disposable Sauce Containers',
       subtitle: 'Hygienic portion cups with secure snap-on lids to prevent spills',
-      span: 'col-7',
-      aspect: '16/9'
+      height: 600
     },
     {
-      image: strawsImg,
+      id: 7,
+      img: strawsImg,
       title: 'Paper Drinking Straws',
       subtitle: 'Biodegradable, eco-friendly straws offering exceptional durability',
-      span: 'col-6',
-      aspect: '4/3'
+      height: 800
     },
     {
-      image: cutleryImg,
+      id: 8,
+      img: cutleryImg,
       title: 'Wooden Cutlery Collection',
       subtitle: 'Eco-conscious birchwood spoons, forks, and knives with smooth finish',
-      span: 'col-6',
-      aspect: '4/3'
+      height: 500
     }
   ];
 
@@ -80,27 +81,20 @@ export default function Gallery() {
         </ScrollReveal>
       </section>
 
-      {/* 2. Asymmetric Editorial Grid */}
+      {/* 2. React Bits Masonry Grid */}
       <section className="container no-padding-top">
-        <div className="gallery-editorial-grid">
-          {galleryItems.map((item, idx) => (
-            <ScrollReveal 
-              key={idx} 
-              className={`gallery-item ${item.span}`}
-              style={{ aspectRatio: item.aspect }}
-              stagger={0}
-            >
-              <img src={item.image} alt={item.title} className="gallery-image" />
-              
-              {/* Dark luxury gradient overlay with text reveal on hover */}
-              <div className="gallery-hover-overlay">
-                <span className="gallery-item-tag">Premium Packaging</span>
-                <h3>{item.title}</h3>
-                <p className="gallery-item-subtitle">{item.subtitle}</p>
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
+        <ScrollReveal>
+          <Masonry 
+            items={items} 
+            animateFrom="bottom" 
+            duration={0.6} 
+            stagger={0.08} 
+            scaleOnHover={true} 
+            hoverScale={0.97} 
+            blurToFocus={true} 
+            colorShiftOnHover={false} 
+          />
+        </ScrollReveal>
 
         {/* 3. Professional Capabilities Note */}
         <ScrollReveal>
@@ -118,3 +112,4 @@ export default function Gallery() {
     </div>
   );
 }
+
