@@ -1,6 +1,7 @@
 import ScrollReveal from '../components/ScrollReveal';
-import PlaceholderVector from '../components/PlaceholderVector';
 import { Target, Eye, ShieldCheck, DollarSign, RefreshCw, Truck } from 'lucide-react';
+import ProfileCard from '../components/ProfileCard';
+import balajiPhoto from '../assets/balaji-bhatt.jpeg';
 
 export default function About() {
   return (
@@ -8,39 +9,78 @@ export default function About() {
       {/* 1. Page Header */}
       <section className="container no-padding-bottom">
         <ScrollReveal>
-          <span className="eyebrow">A Legacy of Trust</span>
-          <h2>About Our Solutions</h2>
+          {/* <span className="eyebrow">A Legacy of Trust</span> */}
+          <h2>About</h2>
           <hr className="divider-gold-hr" />
         </ScrollReveal>
       </section>
 
-      {/* 2. Split Editorial Layout */}
-      <section className="container no-padding-top">
-        <div className="editorial-layout">
-          {/* Left Text */}
-          <ScrollReveal>
-            <div className="divider-left-border">
-              <span className="eyebrow">Who We Are</span>
-              <h3 style={{ fontSize: 'clamp(1.5rem, 4vw, 2rem)', marginBottom: '1.5rem', lineHeight: '1.3' }}>
-                Partnering with leading brands to deliver <em>consistent quality</em>.
-              </h3>
-              <p style={{ fontSize: 'clamp(0.95rem, 2.2vw, 1.05rem)', marginBottom: '1.5rem', color: 'var(--primary-text)' }}>
-                Santosh Hospitality is a dedicated packaging and consumables supplier headquartered in Andhra Pradesh, partnering with hotels, restaurants, cafés, corporate clients, and retail customers to deliver consistent, quality products — at scale and on time.
-              </p>
-              <p>
-                Founded on the principles of trust and supply chain transparency, we have grown into South India's premium packaging and supply partner. We maintain long-term customer relationships across multiple industries, managing the sourcing and distribution of essentials for both wholesale and retail requirements.
-              </p>
-            </div>
-          </ScrollReveal>
+      {/* 2. Who We Are Section */}
+      <section className="container no-padding-top" style={{ paddingBottom: '1.5rem' }}>
+        <ScrollReveal className="about-who-we-are">
+          
+        </ScrollReveal>
+      </section>
 
-          {/* Right Placeholder Image Block */}
-          <ScrollReveal>
-            <div className="luxury-placeholder dark-theme" style={{ minHeight: 'clamp(280px, 40vw, 400px)' }}>
-              <PlaceholderVector type="story" size={180} />
-              <div className="placeholder-label">SANTOSH ARCHITECTURAL MOTIF</div>
-            </div>
-          </ScrollReveal>
-        </div>
+      {/* Meet the Founder Section */}
+      <section className="container no-padding-top">
+        <ScrollReveal>
+          <div className="profile-card-wrapper">
+            <span className="eyebrow" style={{ textAlign: 'center' }}>Meet the Founder</span>
+            <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>The Visionary Behind Our Brand</h2>
+            
+            <ProfileCard
+              name="Balaji Bhatt"
+              title="Founder"
+              avatarUrl={balajiPhoto}
+              enableTilt={true}
+              enableMobileTilt={false}
+              behindGlowEnabled={true}
+            />
+            
+            <blockquote className="founder-quote">
+              <p>
+                "Started with a handful of hotels in Vizag. Today we serve South 
+                India's finest ,one honest delivery at a time."
+              </p>
+              <span>— Balaji Bhatt, Founder</span>
+            </blockquote>
+          </div>
+        </ScrollReveal>
+      </section>
+      {/* Founder Story Section */}
+      <section className="container no-padding-top">
+        <ScrollReveal className="founder-story-container">
+          <h3>About the Founder</h3>
+          <p>
+            I started my journey in hospitality supplies at the age of 17, right here in Visakhapatnam, Andhra Pradesh. Today, at 21, I see Santosh Hospitality as much more than a business — it is an industry I genuinely love and continue to explore every day.
+          </p>
+          <p>
+            What excites me most is being part of someone’s journey. When a new café, restaurant, hotel, or outlet opens, there is always a story, a dream, and a lot of hard work behind it. I enjoy meeting those people, understanding their requirements, guiding them on what they actually need, and being someone they can rely on.
+          </p>
+          <p>
+            I personally stay connected with customers and regularly visit them to understand how their requirements are evolving. I also travel frequently, meet people across the industry, and stay close to the market so that I can keep learning and serve better.
+          </p>
+
+          <h3>My Vision</h3>
+          <p>
+            My vision is to build Santosh Hospitality into a trusted, large-scale hospitality supply company — starting from Visakhapatnam and reaching wider markets over time.
+          </p>
+          <p>
+            I don’t want customers to see us as just another supplier. I want every relationship to feel personal, dependable, and long-term.
+          </p>
+
+          <h3>My Mission</h3>
+          <p>
+            To make hospitality procurement simpler through the right products, reliable service, honest guidance, and genuine relationships.
+          </p>
+
+          <div className="founder-story-closing-block">
+            <p className="closing-tagline">
+              "I don't just want to supply businesses. I want to grow alongside them."
+            </p>
+          </div>
+        </ScrollReveal>
       </section>
 
       {/* 3. Vision + Mission Pillar Cards */}

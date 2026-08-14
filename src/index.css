@@ -77,7 +77,7 @@ p {
 /* Eyebrow Label Style */
 .eyebrow {
   font-family: var(--font-body);
-  font-size: 0.7rem;
+  font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -2376,5 +2376,118 @@ footer.brand-footer p {
   .hero-ctas .btn {
     width: 100%;
     max-width: 320px;
+  }
+}
+
+/* About page - Who We Are Section styling */
+.about-who-we-are {
+  max-width: 1000px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.about-who-we-are h3 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  margin-bottom: 1.8rem;
+  line-height: 1.3;
+}
+
+.about-who-we-are p {
+  color: var(--primary-text);
+  line-height: 1.7;
+  margin-bottom: 1.5rem; /* Ensure distinct gap of 24px between paragraphs */
+}
+
+.about-who-we-are p:last-child {
+  margin-bottom: 0; /* Remove trailing margin on last paragraph */
+}
+
+.about-who-we-are p.lead-text {
+  font-size: clamp(1rem, 2.2vw, 1.1rem);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-who-we-are {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-who-we-are h3 {
+    /* Roughly 30-35% reduction from 2.2rem on desktop to 1.4rem on mobile */
+    font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .about-who-we-are p.lead-text {
+    /* Floor font-size to 16px (1rem) on mobile */
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-who-we-are p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-who-we-are p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Founder Story Section styling */
+.founder-story-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.founder-story-container p {
+  color: var(--muted-text); /* Sage gray */
+  line-height: 1.78;
+  font-size: 1rem;
+  margin-bottom: 1.35rem; /* ~21.6px paragraph spacing */
+  letter-spacing: 0.01em;
+}
+
+.founder-story-container h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3.5vw, 1.8rem);
+  font-weight: 400;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--brand-dark);
+}
+
+.founder-story-container h3:first-of-type {
+  margin-top: 0;
+}
+
+.founder-story-closing-block {
+  margin-top: 3.5rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(197, 160, 89, 0.2);
+  border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+  text-align: center;
+}
+
+.founder-story-closing-block .closing-tagline {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.7vw, 1.45rem); /* roughly 1.1x the body size */
+  font-style: italic;
+  color: var(--brand-accent); /* keep the gold accent color */
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.founder-story-closing-block p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .founder-story-container {
+    max-width: 100%;
   }
 }
