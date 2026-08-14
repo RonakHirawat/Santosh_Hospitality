@@ -15,15 +15,8 @@ export default function About() {
         </ScrollReveal>
       </section>
 
-      {/* 2. Who We Are Section */}
-      <section className="container no-padding-top" style={{ paddingBottom: '1.5rem' }}>
-        <ScrollReveal className="about-who-we-are">
-          
-        </ScrollReveal>
-      </section>
-
       {/* Meet the Founder Section */}
-      <section className="container no-padding-top">
+      <section className="container" style={{ paddingTop: '2rem' }}>
         <ScrollReveal>
           <div className="profile-card-wrapper">
             <span className="eyebrow" style={{ textAlign: 'center' }}>Meet the Founder</span>
@@ -53,7 +46,7 @@ export default function About() {
         <ScrollReveal className="founder-story-container">
           <h3>About the Founder</h3>
           <p>
-            I started my journey in hospitality supplies at the age of 17, right here in Visakhapatnam, Andhra Pradesh. Today, at 21, I see Santosh Hospitality as much more than a business — it is an industry I genuinely love and continue to explore every day.
+            I started my journey in hospitality supplies at the age of 17, right here in Visakhapatnam, Andhra Pradesh. Today, at 21, I see Santosh Hospitality as much more than a business, it is an industry I genuinely love and continue to explore every day.
           </p>
           <p>
             What excites me most is being part of someone’s journey. When a new café, restaurant, hotel, or outlet opens, there is always a story, a dream, and a lot of hard work behind it. I enjoy meeting those people, understanding their requirements, guiding them on what they actually need, and being someone they can rely on.
@@ -61,10 +54,10 @@ export default function About() {
           <p>
             I personally stay connected with customers and regularly visit them to understand how their requirements are evolving. I also travel frequently, meet people across the industry, and stay close to the market so that I can keep learning and serve better.
           </p>
-
+          
           <h3>My Vision</h3>
           <p>
-            My vision is to build Santosh Hospitality into a trusted, large-scale hospitality supply company — starting from Visakhapatnam and reaching wider markets over time.
+            My vision is to build Santosh Hospitality into a trusted, large-scale hospitality supply company starting from Visakhapatnam and reaching wider markets over time.
           </p>
           <p>
             I don’t want customers to see us as just another supplier. I want every relationship to feel personal, dependable, and long-term.
