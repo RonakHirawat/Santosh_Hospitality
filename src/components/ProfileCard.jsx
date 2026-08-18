@@ -62,6 +62,47 @@ export default function ProfileCard({
     setRotateY(0);
   };
 
+  const handleTouchStart = () => {
+    if (!enableTilt || !isMobile || !enableMobileTilt) return;
+    setIsHovered(true);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!enableTilt || !isMobile || !enableMobileTilt) return;
+    const card = cardRef.current;
+    if (!card) return;
+
+    const touch = e.touches[0];
+    const rect = card.getBoundingClientRect();
+    const width = rect.width;
+    const height = rect.height;
+    
+    const x = touch.clientX - rect.left;
+    const y = touch.clientY - rect.top;
+
+    if (x < 0 || x > width || y < 0 || y > height) {
+      handleTouchEnd();
+      return;
+    }
+
+    const maxRotation = 15;
+    const rotX = -((y - height / 2) / (height / 2)) * maxRotation;
+    const rotY = ((x - width / 2) / (width / 2)) * maxRotation;
+
+    setRotateX(rotX);
+    setRotateY(rotY);
+
+    const glareX = (x / width) * 100;
+    const glareY = (y / height) * 100;
+    setGlarePosition({ x: glareX, y: glareY });
+  };
+
+  const handleTouchEnd = () => {
+    setIsHovered(false);
+    setRotateX(0);
+    setRotateY(0);
+  };
+
   const shouldTilt = enableTilt && (!isMobile || enableMobileTilt);
 
   const cardStyle = shouldTilt
@@ -105,6 +146,9 @@ export default function ProfileCard({
         onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         {/* Full-bleed background avatar image */}
         <img
