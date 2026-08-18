@@ -27,7 +27,7 @@ export default function About() {
               title="Founder"
               avatarUrl={balajiPhoto}
               enableTilt={true}
-              enableMobileTilt={false}
+              enableMobileTilt={true}
               behindGlowEnabled={true}
             />
             
